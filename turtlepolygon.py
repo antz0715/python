@@ -8,6 +8,6 @@ def draw_polygon(sides, length):
 
 turtle.speed(1)
 
-draw_polygon(5, 100)  # Draw a pentagon
+draw_polygon(10, 100)  # Draw a pentagon
 
 turtle.done()

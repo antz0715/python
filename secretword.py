@@ -4,16 +4,15 @@ import random
 
 # Here, we're creating a little box of magic (a function) 
 # Its job is to pick one word out of a secret hat (a list of words) so you can guess it.
-
 def choose_word():
-    words = ['pyramid', 'dinosaur', 'galaxy', 'volcano', 'pharaoh']
+    words = ['tiger', 'dinosaur', 'galaxy', 'volcano', 'balloon']
     return random.choice(words) # is like closing our eyes and picking one word from the list without looking
 
 def play_game(secret_word):
     # This is where we set up the actual game. We tell it the mystery word, and it starts the guessing game.
     guessed_letters = ['_'] * len(secret_word) #  sets up a bunch of blanks 
     # on the screen, one for each letter in the mystery word. It's like the empty spots in a crossword puzzle waiting to be filled in.
-    attempts = 6  # Or any number you see fit
+    attempts = 10  # Or any number you see fit
     guessed = False
 
     print("Welcome to the Mystery Word Game!")

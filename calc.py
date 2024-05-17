@@ -1,6 +1,6 @@
-def add(x, y, z):
+def add(x, y): #define function
     #Add Function
-    return x + y + z
+    return x + y 
 
 def subtract(x, y):
     #Subtract Function
@@ -11,9 +11,9 @@ def multiply(x, y):
     return x * y
 
 def divide(x, y):
-    #Divide Function
+    #Divide Function   if this do that ELSE on or off if not
     if y == 0:
-        return "Error! Division by zero."
+        return "error!"
     else:
         return x / y
 

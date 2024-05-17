@@ -3,7 +3,6 @@ import random
 # The "random" module includes tools for generating random numbers, 
 # which we'll use to shuffle our flashcards so they appear in a different order each time.
 
-
 # Flashcard data: questions and answers
 # Here, we're creating a dictionary called flashcards where each item has a question about animals 
 #as its key and the answer as its value. Think of it like a real set of flashcards where one side has a
@@ -19,8 +18,6 @@ flashcards = {
     "What animal is known to have a memory span of three years?": "goldfish",
     "Which animal never sleeps?": "bullfrog",
 }
-
-
 # This line starts the definition of a function named quiz. 
 # Functions are like mini-programs within our larger program that can be run whenever we call them. 
 # This particular function takes one input, flashcards, which is our dictionary of questions and answers.
@@ -43,12 +40,10 @@ def quiz(flashcards):
             score += 1
         else:
             print(f"Wrong! The correct answer was {flashcards[question]}.")
-        print()
-    
+        print() 
     print(f"Quiz finished! Your score is {score}/{len(flashcards)}.")
     #After all the questions have been asked, this line tells the player the game is over and shows their final score.
     # The len(flashcards) part tells us how many questions there were in total
-
 if __name__ == "__main__":
     quiz(flashcards)
 
